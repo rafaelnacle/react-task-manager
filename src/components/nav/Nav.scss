@@ -1,0 +1,29 @@
+@import '../../variables.scss';
+nav {
+  float: right;
+  margin-right: 10px;
+}
+
+.nav-list {
+  list-style: none;
+  display: inline-flex;
+  float: right;
+  margin: 0;
+
+  li {
+    justify-content: space-between;
+    padding: 15px;
+
+    a {
+      text-decoration: none;
+      color: $color-pink;
+      font-family: $primary-font;
+      font-weight: 400;
+      transition: 0.5s ease;
+
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+}

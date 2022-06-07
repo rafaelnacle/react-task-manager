@@ -1,0 +1,48 @@
+@import '../../variables.scss';
+
+.card {
+  background-color: $background-secondary;
+  width: 210px;
+  height: 280px;
+  border-radius: 5px;
+  border: 1px solid $color-pink;
+  margin: 15px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-header {
+  h3 {
+    font-family: $primary-font;
+    color: $color-green;
+  }
+}
+
+.card-content {
+  p {
+    font-family: $primary-font;
+  }
+}
+
+.card-footer {
+  display: flex;
+  button {
+    width: 120px;
+    height: 30px;
+    margin: 0 auto;
+    border: 1px solid $color-pink;
+    border-radius: 5px;
+    background-color: $color-green;
+    color: $background;
+    transition: 0.3s ease 1;
+    font-size: 12px;
+    font-family: $primary-font;
+
+    &:hover {
+      background-color: $color-pink;
+      color: $foreground;
+    }
+  }
+}
