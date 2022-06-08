@@ -1,4 +1,4 @@
-@import '../../variables.scss';
+@import "../../variables.scss";
 
 .task {
   button {
@@ -13,8 +13,5 @@
     &:hover {
       background-color: $color-pink;
     }
-  }
-  p {
-    font-family: $primary-font;
   }
 }

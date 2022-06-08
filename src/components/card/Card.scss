@@ -1,4 +1,4 @@
-@import '../../variables.scss';
+@import "../../variables.scss";
 
 .card {
   background-color: $background-secondary;
@@ -14,24 +14,20 @@
 }
 
 .card-header {
-  h3 {
+  h4 {
     font-family: $primary-font;
     color: $color-green;
-  }
-}
-
-.card-content {
-  p {
-    font-family: $primary-font;
   }
 }
 
 .card-footer {
   display: flex;
   button {
+    max-width: 120px;
     width: 120px;
     height: 30px;
     margin: 0 auto;
+    margin-top: 20px;
     border: 1px solid $color-pink;
     border-radius: 5px;
     background-color: $color-green;
@@ -39,6 +35,7 @@
     transition: 0.3s ease 1;
     font-size: 12px;
     font-family: $primary-font;
+    font-weight: 500;
 
     &:hover {
       background-color: $color-pink;

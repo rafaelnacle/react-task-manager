@@ -3,11 +3,15 @@ import "../card/Card.scss";
 import CardItem from "../cardItem/CardItem";
 
 const Card = ({ title }) => {
+  function handleClick() {
+    alert("You clicked me");
+  }
+
   return (
     <>
       <section className="card">
         <header className="card-header">
-          <h3>{title}</h3>
+          <h4>{title}</h4>
         </header>
         <article className="card-content">
           <CardItem task="lorem ipsum dolor" />
@@ -16,7 +20,7 @@ const Card = ({ title }) => {
           <CardItem task="lorem ipsum dolor" />
         </article>
         <footer className="card-footer">
-          <button>Button</button>
+          <button onClick={handleClick}>Button</button>
         </footer>
       </section>
     </>
